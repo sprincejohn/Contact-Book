@@ -1,11 +1,11 @@
 body{
-    background-color:#FDF5E6	;
-  	text-align: center;
-  	padding-right: 0px;
-  	top: 0px;
-  	right: 0px;
-  	bottom: 0px;
-  	left: 0px;
+  background-color:#FDF5E6	;
+  text-align: center;
+  padding-right: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 td{
@@ -23,12 +23,12 @@ label{
 }
 
 #center{
-    margin: auto;
-    width: 51.25%;
-    padding: 10px;
-    text-align:justified;
-    background-color:#A9A9A9;
-    color: white;
+  margin: auto;
+  width: 51.25%;
+  padding: 10px;
+  text-align:justified;
+  background-color:#A9A9A9;
+  color: white;
 }
 
 #h{
@@ -38,25 +38,22 @@ label{
 }
 
 #center1{
-    margin: auto;
-    width: 51.25%;
-    padding: 10px;
-    text-align:justified;
-    background-color:#A9A9A9;
-    color: white;
+  margin: auto;
+  width: 51.25%;
+  padding: 10px;
+  text-align:justified;
+  background-color:#A9A9A9;
+  color: white;
 }
 
 #center2{
-    margin: auto;
-    width: auto;
-    padding: 10px;
-    text-align: right;
+  margin: auto;
+  width: auto;
+  padding: 10px;
+  text-align: right;
 }
 
-
-
 #button{
-
   border: 1px solid black;
   padding: 10px;
   position: fixed;
@@ -66,7 +63,6 @@ label{
 }
 
 #button1{
-
   padding: 10px;
   positoin: fixed;
   text-align: center;
@@ -89,45 +85,44 @@ h1{
 }
 
 #left{
-    position:fixed;
-    left:22px;
-    top:0;
-  	width:15%;
-  	height:50%;
-    z-index:1000;
-
+  position:fixed;
+ left:22px;
+  top:0;
+	width:15%;
+	height:50%;
+  z-index:1000;
 }
 
 a:link {
-    color: GoldenRod;
-    background-color: transparent;
-    text-decoration: none;
+  color: GoldenRod;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 a:visited {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 a:hover {
-    color:gray;
-    background-color: transparent;
-    text-decoration: none;
+  color:gray;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 #chatbox {
-    display: none;
-    width: 100%;
-    padding: 50px 0;
-    text-align: right;
-    margin-right: 4850px;
-    box-shadow: 0 3px #ccc;
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: right;
+  margin-right: 4850px;
+  box-shadow: 0 3px #ccc;
 }
 
 #namebox {
-    display: none;
-    margin-right: 4850px;
+  display: none;
+  margin-right: 4850px;
 }
 
 
@@ -144,7 +139,6 @@ a:hover {
 }
 
 #chatype{
-
   display: hidden ;
   margin-left: 800px;
   margin-top: 10px;

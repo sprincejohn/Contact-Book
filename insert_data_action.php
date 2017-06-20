@@ -6,9 +6,9 @@
 
     if(isset($_POST["insert"])){
 
-            $Name =  $_POST['Name'];
-            $Email =  $_POST['Email'];
-            $Phone =  $_POST['Phone'];
+            $Name =  mysqli_real_escape_string['Name'];
+            $Email =  mysqli_real_escape_string['Email'];
+            $Phone =  mysqli_real_escape_string['Phone'];
             $flag = 0;
 
             $Err = "";

@@ -21,8 +21,14 @@ $(document).ready(function(){
               cache:false,
               success: function(data)
               {
-                $('#chatInput').val("");     // for clearing the text-field after it text is passed
+                if(data.status == 'success'){
+                  alert("Success..!!!");
+                  $('#chatInput').val("");
+                }else if(data.status == 'error'){
+                  alert("Error on query!");
+                }
               }
+
           });
       }
     });

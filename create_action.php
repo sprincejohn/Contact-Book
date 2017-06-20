@@ -14,9 +14,9 @@
 
       if(isset($_POST["create"])){
 
-              $Username =  $_POST['Username'];
-              $Email =  $_POST['Email'];
-              $Password =  $_POST['Password'];
+              $Username =  mysqli_real_escape_string['Username'];
+              $Email =  mysqli_real_escape_string['Email'];
+              $Password =  mysqli_real_escape_string['Password'];
 
               $Err = "";
                 $db = mysqli_connect("localhost","root","root","Address_Book");

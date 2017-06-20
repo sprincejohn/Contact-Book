@@ -9,6 +9,7 @@
     }
     include_once('logout.php');
     include_once('addrs_book.js');
+    include_once('address_book_action.php');
     $rec = $_SESSION['reciever'];
     $vid = $_SESSION['lstmsg'];
 ?>
@@ -69,7 +70,7 @@
                 $id = $row['ContactNo'];
                 $name = $row['Name'];
 
-                echo '<a href="update.php?uid= ' .$id. '"] onclick="update_action.php" target="blank"> Edit  </a><br>';
+                echo '<a href="update.php?uid= ' .$id. '", onclick="update_action.php" target="blank"> Edit  </a><br>';
                 echo '<a href="delete_action.php?id= ' .$id. '"> Delete   </a>';
             ?>
 
@@ -99,24 +100,12 @@
       ?>
   </table>
 
-  <?php
-    $UID=$_SESSION['username'];
-    $rec = $_SESSION['reciever'];
-
-    $conn = new mysqli("localhost", "root", "root", "Address_Book");
-
-    $ql = "SELECT Sender,Reciever,Chat_Text FROM ChatBot WHERE Sender = '$UID' AND Reciever = '$rec' ";           //Query to display Sender's View
-    $result = $conn->query($ql);
-
-    $rql = "SELECT id,Sender,Reciever,Chat_Text FROM ChatBot WHERE Sender = '$rec' AND Reciever = '$UID' ";        //Query to display Reciever's View
-    $res = $conn->query($rql);
-  ?>
   <div id="chatbox">
     <div id="chatscreen">
         <h5><?php echo $rec;?></h5>
         <?php
             if ($result->num_rows > 0 &&  $res ->num_rows > 0) {
-               while(($row = $result->fetch_assoc()) && $rowd = $res->fetch_assoc()) {
+               while(($rows = $result->fetch_assoc()) && $rowd = $res->fetch_assoc()) {
         ?>
             <tr>
                 <td><?php echo $row['Sender'].": ";?></td>
